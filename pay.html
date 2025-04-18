@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Ларец</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/media/header/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- header start -->
+    <header class="container">
+
+
+      <div class="logo">
+      <a href="index.html"> <img src="assets/media/header/logo.png" alt=""></a> 
+      </div>
+      <div class="nav-wrapper">
+          <div class="burger">
+              <span></span>
+              <span></span>
+              <span></span>
+          </div>
+          <nav class="nav-menu">
+              <a href="catalog.html">Каталог</a>
+              <a href="promotion.html">Акции</a>
+              <a href="#coll">Коллекции</a>
+              <a href="about.html">О нас</a>
+          </nav>
+      </div>
+      <div class="personandpacket">
+          <a href="reg.html"><img src="assets/media/header/person.png" alt=""></a>
+          <button id="cartBtn"> <img src="assets/media/header/packet.png" alt=""></button>
+      </div>
+      <div class="phone">
+          <a href="tel:+7(906) 917-21-00">+7(906) 917-21-00</a>
+      </div>
+  </header>
+    <!-- header end -->
+     <div class="fon"></div>
+    <div class="payment-page container">
+        <h1>ОПЛАТА ЗАКАЗА</h1>
+      
+        <div class="payment-summary">
+          <p class="payment-amount">Товары на сумму: <br> <br> <strong>83 250 РУБ.</strong></p>
+          <p class="payment-desc">
+            Передача всех банковских данных осуществляется с использованием
+            криптографического протокола 3DS. К оплате принимаются банковские карты Visa и MasterCard,
+            поддерживающие 3D Secure.
+          </p>
+        </div>
+      
+        <h2>Выберите способ оплаты:</h2>
+      
+        <form class="payment-form">
+          
+          <!-- Оплата картой на сайте -->
+          <label class="payment-option">
+            <input type="radio" name="paymethod" checked>
+            <span class="option-title">Банковской картой на сайте</span>
+          </label>
+          <div class="card-details">
+            <div class="form-row">
+              <input type="text" placeholder="Номер карты" required>
+            </div>
+            <div class="form-row">
+              <input type="text" placeholder="Срок действия" required>
+              <input type="text" placeholder="CVV2" required>
+            </div>
+          </div>
+      
+          <!-- Оплата картой при получении -->
+          <label class="payment-option">
+            <input type="radio" name="paymethod">
+            <span class="option-title">Банковской картой при получении</span>
+          </label>
+      
+          <!-- Наличными при получении -->
+          <label class="payment-option">
+            <input type="radio" name="paymethod">
+            <span class="option-title">Наличными при получении</span>
+          </label>
+      
+          <!-- Кнопка оплатить -->
+          <button type="submit" class="pay-button">Оплатить</button>
+      
+          <p class="payment-note">
+            Нажимая на кнопку «Оплатить», Вы принимаете условия <br>
+            пользовательского соглашения и политики конфиденциальности.
+          </p>
+        </form>
+      </div>
+      
+    <!-- footer start -->
+    <div class="footer">
+        <footer class="container">
+            <div class="logo">
+                <img src="assets/media/header/logo.png" alt="">
+            </div>
+            <div class="contact">
+                <h3>Свяжитесь <br> с нами</h3>
+                <p>Наш телефон:
+                    +7 (917) 906-21-00 <br>
+                    Наша почта: <br>
+                    adelyagizz@gmail-larec.ru</p>
+            </div>
+            <div class="coc">
+                <h3>МЫ В СОЦСЕТЯХ:</h3>
+                <p>Instagram <br>
+                    Vkontakte <br>
+                    Facebook</p>
+            </div>
+            <div class="guests">
+                <h3>ПРИХОДИТЕ <br> К НАМ В ГОСТИ</h3>
+                <p>Наш адрес: Казань, <br> Карбышева, д. 2 <br>
+                    будни с 9:00 до 18:00</p>
+            </div>
+
+        </footer>
+    </div>
+    <!-- footer end -->
+</body>
+
+</html>

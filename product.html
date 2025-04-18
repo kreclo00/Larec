@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Ларец</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/media/header/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- header start -->
+    <header class="container">
+
+
+        <div class="logo">
+            <a href="index.html"> <img src="assets/media/header/logo.png" alt=""></a>
+        </div>
+        <div class="nav-wrapper">
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="nav-menu">
+                <a href="catalog.html">Каталог</a>
+                <a href="promotion.html">Акции</a>
+                <a href="#coll">Коллекции</a>
+                <a href="about.html">О нас</a>
+            </nav>
+        </div>
+        <div class="personandpacket">
+            <a href="reg.html"><img src="assets/media/header/person.png" alt=""></a>
+            <button id="cartBtn"> <img src="assets/media/header/packet.png" alt=""></button>
+        </div>
+        <div class="phone">
+            <a href="tel:+7(906) 917-21-00">+7(906) 917-21-00</a>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- product start -->
+    <div class="pro">
+        <div class="margin"></div>
+        <div class="product-page container">
+            <div class="product-gallery">
+                <div class="thumbnails">
+                    <img src="assets/media/product/product2.png" alt="Превью 1" onclick="changeImage(this)"
+                        class="active">
+                    <img src="assets/media/product/product3.png" alt="Превью 2" onclick="changeImage(this)">
+                    <img src="assets/media/product/product4.png" alt="Превью 3" onclick="changeImage(this)">
+                </div>
+                <div class="main-image">
+                    <img src="assets/media/product/product1.png" alt="Основное изображение" id="main">
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h1>Кольцо из белого золота с бриллиантом</h1>
+                <p class="article">Артикул 5101320</p>
+                <p class="price">25 035 руб.</p>
+
+                <div class="insert">
+                    <label>Вставка:</label>
+                    <select>
+                        <option>1 Бр Кр 57 0,084 4/5а</option>
+                    </select>
+                </div>
+
+                <div class="sizes">
+                    <label>Размер:</label>
+                    <div class="size-options">
+                        <button>15.5</button>
+                        <button>16.0</button>
+                        <button disabled>16.5</button>
+                        <button class="active">17.0</button>
+                        <button>17.5</button>
+                        <button disabled>18.0</button>
+                    </div>
+                </div>
+
+                <div class="size-help-wrapper">
+                    <p class="size-help">Как узнать размер?</p>
+                    <div class="size-instruction">
+                        <h4>Как определить размер кольца:</h4>
+                        <p>1. Возьмите нитку или тонкую полоску бумаги.</p>
+                        <p>2. Оберните её вокруг пальца, где будете носить кольцо.</p>
+                        <p>3. Отметьте точку, где нитка/бумага пересекается.</p>
+                        <p>4. Измерьте длину нитки/бумаги в миллиметрах — это будет окружность пальца.</p>
+                        <p>5. Сравните с таблицей размеров: например, окружность 50 мм — это размер 16.</p>
+                    </div>
+                </div>
+
+                <button class="page-add-to-cart">Добавить в корзину</button>
+            </div>
+        </div>
+        <div class="product-details-wrapper container">
+            <!-- Левая часть: Характеристики -->
+            <div class="accordion-section">
+                <!-- Характеристики -->
+                <div class="accordion-toggle">
+                    <svg class="accordion-icon" viewBox="0 0 24 24">
+                        <path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                    Характеристики
+                </div>
+                <div class="accordion-content">
+                    <!-- Пример содержимого для Характеристик -->
+                    <div class="accordion-row"><span>Материал:</span><span>Золото</span></div>
+                    <div class="accordion-row"><span>Проба:</span><span>585</span></div>
+                </div>
+            
+                <!-- Вставка -->
+                <div class="accordion-toggle open">
+                    <svg class="accordion-icon" viewBox="0 0 24 24">
+                        <path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                    Вставка
+                </div>
+                <div class="accordion-content open">
+                    <div class="accordion-row"><span>Камень:</span><span>Бриллиант ⓘ</span></div>
+                    <div class="accordion-row"><span>Количество:</span><span>1 шт.</span></div>
+                    <div class="accordion-row"><span>Вес: ⓘ</span><span>0,157 карат</span></div>
+                    <div class="accordion-row"><span>Чистота: ⓘ</span><span>3</span></div>
+                    <div class="accordion-row"><span>Огранка: ⓘ</span><span>A</span></div>
+                </div>
+            </div>
+
+            <!-- Правая часть: Предложения -->
+            <div class="product-side-suggestions">
+                <div class="product-variants">
+                    <h3>Этот же товар в другом исполнении:</h3>
+                    <div class="variant-images">
+                        <img src="assets/media/product/product5.png" alt="Золотое кольцо">
+                        <img src="assets/media/product/product6.png" alt="Жёлтое кольцо">
+                    </div>
+                </div>
+
+                <div class="product-complement">
+                    <h3>Дополните свой образ:</h3>
+                    <div class="complement-image">
+                        <img src="assets/media/product/product7.png" alt="Серьги">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="margin"></div>
+        <h1 class="product-title container">ОТЗЫВЫ</h1>
+        <section class="reviews container">
+            <div class="reviews-header">
+                <h2></h2>
+                <a href="#" class="leave-review"><span>+</span> Оставить отзыв</a>
+            </div>
+            <div class="reviews-slider">
+                <button class="arrow left"></button>
+
+                <div class="reviews-cards">
+                    <div class="review-card">
+                        <div class="review-top">
+                            <span class="name">Оксана</span>
+                            <span class="date">01.10.2020</span>
+                        </div>
+                        <div class="stars">★★★★★</div>
+                        <p class="text">Потрясающее кольцо! Великолепно смотрится на руке.</p>
+                        <div class="photos">
+                            <img src="assets/media/product/rev1.png" alt="">
+                            <img src="assets/media/product/rev2.png" alt="">
+                            <img src="assets/media/product/rev3.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-top">
+                            <span class="name">Ирина</span>
+                            <span class="date">10.11.2020</span>
+                        </div>
+                        <div class="stars">★★★★☆</div>
+                        <p class="text">Красивое кольцо, особенно в комплекте с подвеской...</p>
+                        <div class="photos">
+                            <img src="assets/media/product/rev4.png" alt="">
+                            <img src="assets/media/product/rev5.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-top">
+                            <span class="name">Иван</span>
+                            <span class="date">22.12.2020</span>
+                        </div>
+                        <div class="stars">★★★★★</div>
+                        <p class="text">Покупал кольцо в подарок своей девушке, ей очень понравилось!</p>
+                        <div class="photos">
+                            <img src="assets/media/product/rev6.png" alt="">
+                            <img src="assets/media/product/rev7.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <button class="arrow right"></button>
+            </div>
+        </section>
+        <div class="margin"></div>
+        <h1>ПОХОЖИЕ УКРАШЕНИЯ</h1>
+        <div class="cards container">
+            <div class="product-card">
+                <div class="badge">SALE</div>
+                <div class="product-image">
+                    <a href="product.html"> <img src="assets/media/catalog/ring27.png" alt="Кольцо"></a>
+                </div>
+                <div class="product-info">
+                    <p class="sku">5101927</p>
+                    <p class="desc">Кольцо из белого золота<br> с бриллиантом</p>
+                    <p class="price">35 310 ₽</p>
+                    <p class="old-price">45 310 ₽</p>
+                </div>
+                <a href="#" class="card-add-to-cart">Добавить в корзину</a>
+            </div>
+            <div class="product-card">
+                <div class="badge">SALE</div>
+                <div class="product-image">
+                    <a href="product.html"> <img src="assets/media/catalog/ring26.png" alt="Кольцо"></a>
+                </div>
+                <div class="product-info">
+                    <p class="sku">5101927</p>
+                    <p class="desc">Кольцо из белого золота<br> с бриллиантом</p>
+                    <p class="price">35 310 ₽</p>
+                    <p class="old-price">45 310 ₽</p>
+                </div>
+                <a href="#" class="card-add-to-cart">Добавить в корзину</a>
+            </div>
+            <div class="product-card">
+                <div class="badge">SALE</div>
+                <div class="product-image">
+                    <a href="product.html"> <img src="assets/media/catalog/ring23.png" alt="Кольцо"></a>
+                </div>
+                <div class="product-info">
+                    <p class="sku">5101927</p>
+                    <p class="desc">Кольцо из белого золота<br> с бриллиантом</p>
+                    <p class="price">35 310 ₽</p>
+                    <p class="old-price">45 310 ₽</p>
+                </div>
+                <a href="#" class="card-add-to-cart">Добавить в корзину</a>
+            </div>
+            <div class="product-card">
+                <div class="badge">SALE</div>
+                <div class="product-image">
+                    <a href="product.html"> <img src="assets/media/catalog/ring24.png" alt="Кольцо"></a>
+                </div>
+                <div class="product-info">
+                    <p class="sku">5101927</p>
+                    <p class="desc">Кольцо из белого золота<br> с бриллиантом</p>
+                    <p class="price">35 310 ₽</p>
+                    <p class="old-price">45 310 ₽</p>
+                </div>
+                <a href="#" class="card-add-to-cart">Добавить в корзину</a>
+            </div>
+        </div>
+        <div class="margin"></div>
+        <h1>НЕДАВНИЕ ПРОСМОТРЕННЫЕ</h1>
+        <div class="cards container">
+            <div class="product-card">
+                <div class="badge">SALE</div>
+                <div class="product-image">
+                    <a href="product.html"> <img src="assets/media/catalog/ring25.png" alt="Кольцо"></a>
+                </div>
+                <div class="product-info">
+                    <p class="sku">5101927</p>
+                    <p class="desc">Кольцо из белого золота<br> с бриллиантом</p>
+                    <p class="price">35 310 ₽</p>
+                    <p class="old-price">45 310 ₽</p>
+                </div>
+                <a href="#" class="card-add-to-cart">Добавить в корзину</a>
+            </div>
+            <div class="product-card">
+                <div class="badge">SALE</div>
+                <div class="product-image">
+                    <a href="product.html"> <img src="assets/media/catalog/ring27.png" alt="Кольцо"></a>
+                </div>
+                <div class="product-info">
+                    <p class="sku">5101927</p>
+                    <p class="desc">Кольцо из белого золота<br> с бриллиантом</p>
+                    <p class="price">35 310 ₽</p>
+                    <p class="old-price">45 310 ₽</p>
+                </div>
+                <a href="#" class="card-add-to-cart">Добавить в корзину</a>
+            </div>
+            <div class="product-card">
+                <div class="badge">SALE</div>
+                <div class="product-image">
+                    <a href="product.html"> <img src="assets/media/catalog/ring27.png" alt="Кольцо"></a>
+                </div>
+                <div class="product-info">
+                    <p class="sku">5101927</p>
+                    <p class="desc">Кольцо из белого золота<br> с бриллиантом</p>
+                    <p class="price">35 310 ₽</p>
+                    <p class="old-price">45 310 ₽</p>
+                </div>
+                <a href="#" class="card-add-to-cart">Добавить в корзину</a>
+            </div>
+            <div class="product-card">
+                <div class="badge">SALE</div>
+                <div class="product-image">
+                    <a href="product.html"> <img src="assets/media/catalog/ring28.png" alt="Кольцо"></a>
+                </div>
+                <div class="product-info">
+                    <p class="sku">5101927</p>
+                    <p class="desc">Кольцо из белого золота<br> с бриллиантом</p>
+                    <p class="price">35 310 ₽</p>
+                    <p class="old-price">45 310 ₽</p>
+                </div>
+                <a href="#" class="card-add-to-cart">Добавить в корзину</a>
+            </div>
+        </div>
+    </div>
+    <!-- product end -->
+
+    <!-- footer start -->
+    <div class="footer">
+        <footer class="container">
+            <div class="logo">
+                <img src="assets/media/header/logo.png" alt="">
+            </div>
+            <div class="contact">
+                <h3>Свяжитесь <br> с нами</h3>
+                <p>Наш телефон:
+                    +7 (917) 906-21-00 <br>
+                    Наша почта: <br>
+                    adelyagizz@gmail-larec.ru</p>
+            </div>
+            <div class="coc">
+                <h3>МЫ В СОЦСЕТЯХ:</h3>
+                <p>Instagram <br>
+                    Vkontakte <br>
+                    Facebook</p>
+            </div>
+            <div class="guests">
+                <h3>ПРИХОДИТЕ <br> К НАМ В ГОСТИ</h3>
+                <p>Наш адрес: Казань, <br> Карбышева, д. 2 <br>
+                    будни с 9:00 до 18:00</p>
+            </div>
+
+        </footer>
+    </div>
+    <!-- footer end -->
+    <script>
+        document.querySelectorAll('.accordion-toggle').forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const content = toggle.nextElementSibling;
+                const isOpen = toggle.classList.contains('open');
+        
+                document.querySelectorAll('.accordion-toggle').forEach(t => t.classList.remove('open'));
+                document.querySelectorAll('.accordion-content').forEach(c => c.classList.remove('open'));
+        
+                
+                if (!isOpen) {
+                    toggle.classList.add('open');
+                    content.classList.add('open');
+                }
+            });
+        });
+        </script>
+    <script>
+        function changeImage(el) {
+            const main = document.getElementById('main');
+            main.src = el.src;
+
+            document.querySelectorAll('.thumbnails img').forEach(img => {
+                img.classList.remove('active');
+            });
+
+            el.classList.add('active');
+        }
+    </script>
+
+    <script>
+        const burger = document.querySelector('.burger');
+        const menu = document.querySelector('.nav-menu');
+
+        burger.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    </script>
+    <script>document.querySelectorAll('.size-help').forEach(button => {
+            button.addEventListener('click', () => {
+                const instruction = button.nextElementSibling;
+                instruction.classList.toggle('active');
+            });
+        });</script>
+
+</html>
