@@ -1484,7 +1484,7 @@ button {
 .checkout-page {
     max-width: 1000px;
     padding: 40px;
-    margin-top: -300px;
+    margin-top: 0;
 }
 
 .checkout-page h1 {
@@ -1601,7 +1601,6 @@ button {
 .payment-page {
     max-width: 800px;
     padding: 40px;
-    margin-top: -300px;
 }
 
 .payment-page h1 {
